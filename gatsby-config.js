@@ -6,12 +6,13 @@ module.exports = {
       summary: `하고싶은 것이 많은 개발자`,
     },
     description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
+    siteUrl: `https://wonny-l.github.io/wonny-log/`,
     social: {
       twitter: `wonny`,
       linkedin: `wonny`,
     },
   },
+  pathPrefix: "/wonny-log",
   plugins: [
     `gatsby-plugin-image`,
     {
