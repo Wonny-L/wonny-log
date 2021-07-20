@@ -1,0 +1,431 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style data-href="/wonny-log/styles.a4b0fdcf266fe0648b40.css" id="gatsby-global-css">@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:100;src:local("Montserrat Thin "),local("Montserrat-Thin"),url(/wonny-log/static/montserrat-latin-100-8d7d79679b70dbe27172b6460e7a7910.woff2) format("woff2"),url(/wonny-log/static/montserrat-latin-100-ec38980a9e0119a379e2a9b3dbb1901a.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:100;src:local("Montserrat Thin italic"),local("Montserrat-Thinitalic"),url(/wonny-log/static/montserrat-latin-100italic-e279051046ba1286706adc886cf1c96b.woff2) format("woff2"),url(/wonny-log/static/montserrat-latin-100italic-3b325a3173c8207435cd1b76e19bf501.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:200;src:local("Montserrat Extra Light "),local("Montserrat-Extra Light"),url(/wonny-log/static/montserrat-latin-200-9d266fbbfa6cab7009bd56003b1eeb67.woff2) format("woff2"),url(/wonny-log/static/montserrat-latin-200-2d8ba08717110d27122e54c34b8a5798.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:200;src:local("Montserrat Extra Light italic"),local("Montserrat-Extra Lightitalic"),url(/wonny-log/static/montserrat-latin-200italic-6e5b3756583bb2263eb062eae992735e.woff2) format("woff2"),url(/wonny-log/static/montserrat-latin-200italic-a0d6f343e4b536c582926255367a57da.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:300;src:local("Montserrat Light "),local("Montserrat-Light"),url(/wonny-log/static/montserrat-latin-300-00b3e893aab5a8fd632d6342eb72551a.woff2) format("woff2"),url(/wonny-log/static/montserrat-latin-300-ea303695ceab35f17e7d062f30e0173b.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:300;src:local("Montserrat Light italic"),local("Montserrat-Lightitalic"),url(/wonny-log/static/montserrat-latin-300italic-56f34ea368f6aedf89583d444bbcb227.woff2) format("woff2"),url(/wonny-log/static/montserrat-latin-300italic-54b0bf2c8c4c12ffafd803be2466a790.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:400;src:local("Montserrat Regular "),local("Montserrat-Regular"),url(/wonny-log/static/montserrat-latin-400-b71748ae4f80ec8c014def4c5fa8688b.woff2) format("woff2"),url(/wonny-log/static/montserrat-latin-400-0659a9f4e90db5cf51b50d005bff1e41.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:400;src:local("Montserrat Regular italic"),local("Montserrat-Regularitalic"),url(/wonny-log/static/montserrat-latin-400italic-6eed6b4cbb809c6efc7aa7ddad6dbe3e.woff2) format("woff2"),url(/wonny-log/static/montserrat-latin-400italic-7583622cfde30ae49086d18447ab28e7.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:500;src:local("Montserrat Medium "),local("Montserrat-Medium"),url(/wonny-log/static/montserrat-latin-500-091b209546e16313fd4f4fc36090c757.woff2) format("woff2"),url(/wonny-log/static/montserrat-latin-500-edd311588712a96bbf435fad264fff62.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:500;src:local("Montserrat Medium italic"),local("Montserrat-Mediumitalic"),url(/wonny-log/static/montserrat-latin-500italic-c90ced68b46050061d1a41842d6dfb43.woff2) format("woff2"),url(/wonny-log/static/montserrat-latin-500italic-5146cbfe02b1deea5dffea27a5f2f998.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:600;src:local("Montserrat SemiBold "),local("Montserrat-SemiBold"),url(/wonny-log/static/montserrat-latin-600-0480d2f8a71f38db8633b84d8722e0c2.woff2) format("woff2"),url(/wonny-log/static/montserrat-latin-600-b77863a375260a05dd13f86a1cee598f.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:600;src:local("Montserrat SemiBold italic"),local("Montserrat-SemiBolditalic"),url(/wonny-log/static/montserrat-latin-600italic-cf46ffb11f3a60d7df0567f8851a1d00.woff2) format("woff2"),url(/wonny-log/static/montserrat-latin-600italic-c4fcfeeb057724724097167e57bd7801.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:700;src:local("Montserrat Bold "),local("Montserrat-Bold"),url(/wonny-log/static/montserrat-latin-700-7dbcc8a5ea2289d83f657c25b4be6193.woff2) format("woff2"),url(/wonny-log/static/montserrat-latin-700-99271a835e1cae8c76ef8bba99a8cc4e.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:700;src:local("Montserrat Bold italic"),local("Montserrat-Bolditalic"),url(/wonny-log/static/montserrat-latin-700italic-c41ad6bdb4bd504a843d546d0a47958d.woff2) format("woff2"),url(/wonny-log/static/montserrat-latin-700italic-6779372f04095051c62ed36bc1dcc142.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:800;src:local("Montserrat ExtraBold "),local("Montserrat-ExtraBold"),url(/wonny-log/static/montserrat-latin-800-db9a3e0ba7eaea32e5f55328ace6cf23.woff2) format("woff2"),url(/wonny-log/static/montserrat-latin-800-4e3c615967a2360f5db87d2f0fd2456f.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:800;src:local("Montserrat ExtraBold italic"),local("Montserrat-ExtraBolditalic"),url(/wonny-log/static/montserrat-latin-800italic-bf45bfa14805969eda318973947bc42b.woff2) format("woff2"),url(/wonny-log/static/montserrat-latin-800italic-fe82abb0bcede51bf724254878e0c374.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:900;src:local("Montserrat Black "),local("Montserrat-Black"),url(/wonny-log/static/montserrat-latin-900-e66c7edc609e24bacbb705175669d814.woff2) format("woff2"),url(/wonny-log/static/montserrat-latin-900-8211f418baeb8ec880b80ba3c682f957.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:900;src:local("Montserrat Black italic"),local("Montserrat-Blackitalic"),url(/wonny-log/static/montserrat-latin-900italic-4454c775e48152c1a72510ceed3603e2.woff2) format("woff2"),url(/wonny-log/static/montserrat-latin-900italic-efcaa0f6a82ee0640b83a0916e6e8d68.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:normal;font-weight:300;src:local("Merriweather Light "),local("Merriweather-Light"),url(/wonny-log/static/merriweather-latin-300-fc117160c69a8ea0851b26dd14748ee4.woff2) format("woff2"),url(/wonny-log/static/merriweather-latin-300-58b18067ebbd21fda77b67e73c241d3b.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:italic;font-weight:300;src:local("Merriweather Light italic"),local("Merriweather-Lightitalic"),url(/wonny-log/static/merriweather-latin-300italic-fe29961474f8dbf77c0aa7b9a629e4bc.woff2) format("woff2"),url(/wonny-log/static/merriweather-latin-300italic-23c3f1f88683618a4fb8d265d33d383a.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:normal;font-weight:400;src:local("Merriweather Regular "),local("Merriweather-Regular"),url(/wonny-log/static/merriweather-latin-400-d9479e8023bef9cbd9bf8d6eabd6bf36.woff2) format("woff2"),url(/wonny-log/static/merriweather-latin-400-040426f99ff6e00b86506452e0d1f10b.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:italic;font-weight:400;src:local("Merriweather Regular italic"),local("Merriweather-Regularitalic"),url(/wonny-log/static/merriweather-latin-400italic-2de7bfeaf08fb03d4315d49947f062f7.woff2) format("woff2"),url(/wonny-log/static/merriweather-latin-400italic-79db67aca65f5285964ab332bd65f451.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:normal;font-weight:700;src:local("Merriweather Bold "),local("Merriweather-Bold"),url(/wonny-log/static/merriweather-latin-700-4b08e01d805fa35d7bf777f1b24314ae.woff2) format("woff2"),url(/wonny-log/static/merriweather-latin-700-22fb8afba4ab1f093b6ef9e28a9b6e92.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:italic;font-weight:700;src:local("Merriweather Bold italic"),local("Merriweather-Bolditalic"),url(/wonny-log/static/merriweather-latin-700italic-cd92541b177652fffb6e3b952f1c33f1.woff2) format("woff2"),url(/wonny-log/static/merriweather-latin-700italic-f87f3d87cea0dd0979bfc8ac9ea90243.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:normal;font-weight:900;src:local("Merriweather Black "),local("Merriweather-Black"),url(/wonny-log/static/merriweather-latin-900-f813fc6a4bee46eda5224ac7ebf1b7be.woff2) format("woff2"),url(/wonny-log/static/merriweather-latin-900-5d4e42cb44410674acd99153d57df032.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:italic;font-weight:900;src:local("Merriweather Black italic"),local("Merriweather-Blackitalic"),url(/wonny-log/static/merriweather-latin-900italic-b7901d85486871c1779c0e93ddd85656.woff2) format("woff2"),url(/wonny-log/static/merriweather-latin-900italic-9647f9fdab98756989a8a5550eb205c3.woff) format("woff")}
+
+
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */html{-webkit-text-size-adjust:100%;line-height:1.15}body{margin:0}main{display:block}h1{font-size:2em;margin:.67em 0}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent}abbr[title]{border-bottom:none;text-decoration:underline;-webkit-text-decoration:underline dotted;text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details{display:block}summary{display:list-item}[hidden]{display:none}:root{--maxWidth-none:"none";--maxWidth-xs:20rem;--maxWidth-sm:24rem;--maxWidth-md:28rem;--maxWidth-lg:32rem;--maxWidth-xl:36rem;--maxWidth-2xl:42rem;--maxWidth-3xl:48rem;--maxWidth-4xl:56rem;--maxWidth-full:"100%";--maxWidth-wrapper:var(--maxWidth-2xl);--spacing-px:"1px";--spacing-0:0;--spacing-1:0.25rem;--spacing-2:0.5rem;--spacing-3:0.75rem;--spacing-4:1rem;--spacing-5:1.25rem;--spacing-6:1.5rem;--spacing-8:2rem;--spacing-10:2.5rem;--spacing-12:3rem;--spacing-16:4rem;--spacing-20:5rem;--spacing-24:6rem;--spacing-32:8rem;--fontFamily-sans:Montserrat,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";--fontFamily-serif:"Merriweather","Georgia",Cambria,"Times New Roman",Times,serif;--font-body:var(--fontFamily-serif);--font-heading:var(--fontFamily-sans);--fontWeight-normal:400;--fontWeight-medium:500;--fontWeight-semibold:600;--fontWeight-bold:700;--fontWeight-extrabold:800;--fontWeight-black:900;--fontSize-root:16px;--lineHeight-none:1;--lineHeight-tight:1.1;--lineHeight-normal:1.5;--lineHeight-relaxed:1.625;--fontSize-0:0.833rem;--fontSize-1:1rem;--fontSize-2:1.2rem;--fontSize-3:1.44rem;--fontSize-4:1.728rem;--fontSize-5:2.074rem;--fontSize-6:2.488rem;--fontSize-7:2.986rem;--color-primary:#005b99;--color-text:#2e353f;--color-text-light:#4f5969;--color-heading:#1a202c;--color-heading-black:#000;--color-accent:#d1dce5}*,:after,:before{box-sizing:border-box}html{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-size:var(--fontSize-root);line-height:var(--lineHeight-normal)}body{color:var(--color-text);font-family:var(--font-body);font-size:var(--fontSize-1)}footer{padding:var(--spacing-6) var(--spacing-0)}hr{background:var(--color-accent);border:0;height:1px}h1,h2,h3,h4,h5,h6{font-family:var(--font-heading);letter-spacing:-.025em;line-height:var(--lineHeight-tight);margin-bottom:var(--spacing-6);margin-top:var(--spacing-12)}h2,h3,h4,h5,h6{color:var(--color-heading);font-weight:var(--fontWeight-bold)}h1{color:var(--color-heading-black);font-size:var(--fontSize-6);font-weight:var(--fontWeight-black)}h2{font-size:var(--fontSize-5)}h3{font-size:var(--fontSize-4)}h4{font-size:var(--fontSize-3)}h5{font-size:var(--fontSize-2)}h6{font-size:var(--fontSize-1)}h1>a,h2>a,h3>a,h4>a,h5>a,h6>a{color:inherit;text-decoration:none}p{--baseline-multiplier:0.179;--x-height-multiplier:0.35;line-height:var(--lineHeight-relaxed);margin:var(--spacing-0) var(--spacing-0) var(--spacing-8) var(--spacing-0)}ol,p,ul{padding:var(--spacing-0)}ol,ul{list-style-image:none;list-style-position:outside;margin-bottom:var(--spacing-8);margin-left:var(--spacing-0);margin-right:var(--spacing-0)}ol li,ul li{padding-left:var(--spacing-0)}li>p,ol li,ul li{margin-bottom:calc(var(--spacing-8)/2)}li :last-child{margin-bottom:var(--spacing-0)}li>ul{margin-left:var(--spacing-8);margin-top:calc(var(--spacing-8)/2)}blockquote{border-left:var(--spacing-1) solid var(--color-primary);color:var(--color-text-light);font-size:var(--fontSize-2);font-style:italic;margin-bottom:var(--spacing-8);margin-left:calc(var(--spacing-6)*-1);margin-right:var(--spacing-8);padding:var(--spacing-0) var(--spacing-0) var(--spacing-0) var(--spacing-6)}blockquote>:last-child{margin-bottom:var(--spacing-0)}blockquote>ol,blockquote>ul{list-style-position:inside}table{border-collapse:collapse;border-spacing:.25rem;margin-bottom:var(--spacing-8);width:100%}table thead tr th{border-bottom:1px solid var(--color-accent)}a{color:var(--color-primary)}a:focus,a:hover{text-decoration:none}.global-wrapper{margin:var(--spacing-0) auto;max-width:var(--maxWidth-wrapper);padding:var(--spacing-10) var(--spacing-5)}.global-wrapper[data-is-root-path=true] .bio{margin-bottom:var(--spacing-20)}.global-header{margin-bottom:var(--spacing-12)}.main-heading{font-size:var(--fontSize-7);margin:0}.post-list-item{margin-bottom:var(--spacing-8);margin-top:var(--spacing-8)}.post-list-item p{margin-bottom:var(--spacing-0)}.post-list-item h2{color:var(--color-primary);font-size:var(--fontSize-4);margin-bottom:var(--spacing-2);margin-top:var(--spacing-0)}.post-list-item header{margin-bottom:var(--spacing-4)}.header-link-home{font-family:var(--font-heading);font-size:var(--fontSize-2);font-weight:var(--fontWeight-bold);text-decoration:none}.bio{display:flex;margin-bottom:var(--spacing-16)}.bio-avatar,.bio p{margin-bottom:var(--spacing-0)}.bio-avatar{border-radius:100%;margin-right:var(--spacing-4);min-width:50px}.blog-post header h1{margin:var(--spacing-0) var(--spacing-0) var(--spacing-4) var(--spacing-0)}.blog-post header p{font-family:var(--font-heading);font-size:var(--fontSize-2)}.blog-post-nav ul{margin:var(--spacing-0)}.gatsby-highlight{margin-bottom:var(--spacing-8)}@media (max-width:42rem){blockquote{margin-left:var(--spacing-0);padding:var(--spacing-0) var(--spacing-0) var(--spacing-0) var(--spacing-4)}ol,ul{list-style-position:inside}}code[class*=language-],pre[class*=language-]{word-wrap:normal;background:none;color:#000;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;text-align:left;text-shadow:0 1px #fff;white-space:pre;word-break:normal;word-spacing:normal}code[class*=language-]::selection,code[class*=language-] ::selection,pre[class*=language-]::selection,pre[class*=language-] ::selection{background:#b3d4fc;text-shadow:none}@media print{code[class*=language-],pre[class*=language-]{text-shadow:none}}pre[class*=language-]{margin:.5em 0;overflow:auto;padding:1em}:not(pre)>code[class*=language-],pre[class*=language-]{background:#f5f2f0}:not(pre)>code[class*=language-]{border-radius:.3em;padding:.1em;white-space:normal}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#708090}.token.punctuation{color:#999}.token.namespace{opacity:.7}.token.boolean,.token.constant,.token.deleted,.token.number,.token.property,.token.symbol,.token.tag{color:#905}.token.attr-name,.token.builtin,.token.char,.token.inserted,.token.selector,.token.string{color:#690}.language-css .token.string,.style .token.string,.token.entity,.token.operator,.token.url{background:hsla(0,0%,100%,.5);color:#9a6e3a}.token.atrule,.token.attr-value,.token.keyword{color:#07a}.token.class-name,.token.function{color:#dd4a68}.token.important,.token.regex,.token.variable{color:#e90}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}</style><meta name="generator" content="Gatsby 3.6.2"/><style>.gatsby-image-wrapper{position:relative;overflow:hidden}.gatsby-image-wrapper img{bottom:0;height:100%;left:0;margin:0;max-width:none;padding:0;position:absolute;right:0;top:0;width:100%;object-fit:cover}.gatsby-image-wrapper [data-main-image]{opacity:0;transform:translateZ(0);transition:opacity .25s linear;will-change:opacity}.gatsby-image-wrapper-constrained{display:inline-block;vertical-align:top}</style><noscript><style>.gatsby-image-wrapper noscript [data-main-image]{opacity:1!important}.gatsby-image-wrapper [data-placeholder-image]{opacity:0!important}</style></noscript><script type="module">const e="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;e&&document.body.addEventListener("load",(function(e){if(void 0===e.target.dataset.mainImage)return;if(void 0===e.target.dataset.gatsbyImageSsr)return;const t=e.target;let a=null,n=t;for(;null===a&&n;)void 0!==n.parentNode.dataset.gatsbyImageWrapper&&(a=n.parentNode),n=n.parentNode;const o=a.querySelector("[data-placeholder-image]"),r=new Image;r.src=t.currentSrc,r.decode().catch((()=>{})).then((()=>{t.style.opacity=1,o&&(o.style.opacity=0,o.style.transition="opacity 500ms linear")}))}),!0);</script><link rel="alternate" type="application/rss+xml" href="/wonny-log/rss.xml"/><link rel="icon" href="/wonny-log/favicon-32x32.png?v=4a9773549091c227cd2eb82ccd9c5e3a" type="image/png"/><link rel="manifest" href="/wonny-log/manifest.webmanifest" crossorigin="anonymous"/><meta name="theme-color" content="#663399"/><link rel="apple-touch-icon" sizes="48x48" href="/wonny-log/icons/icon-48x48.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="72x72" href="/wonny-log/icons/icon-72x72.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="96x96" href="/wonny-log/icons/icon-96x96.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="144x144" href="/wonny-log/icons/icon-144x144.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="192x192" href="/wonny-log/icons/icon-192x192.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="256x256" href="/wonny-log/icons/icon-256x256.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="384x384" href="/wonny-log/icons/icon-384x384.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="512x512" href="/wonny-log/icons/icon-512x512.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><title data-react-helmet="true">flutter intro | Wonny Log</title><meta data-react-helmet="true" name="description" content="Flutter 그리고 Web &amp; Desktop Flutter - Beautiful native apps in record time Trend현황 Flutter2 Architecture Material, Cupertino design Flutter Web Flutter Desktop…"/><meta data-react-helmet="true" property="og:title" content="flutter intro"/><meta data-react-helmet="true" property="og:description" content="Flutter 그리고 Web &amp; Desktop Flutter - Beautiful native apps in record time Trend현황 Flutter2 Architecture Material, Cupertino design Flutter Web Flutter Desktop…"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:creator" content="wonny"/><meta data-react-helmet="true" name="twitter:title" content="flutter intro"/><meta data-react-helmet="true" name="twitter:description" content="Flutter 그리고 Web &amp; Desktop Flutter - Beautiful native apps in record time Trend현황 Flutter2 Architecture Material, Cupertino design Flutter Web Flutter Desktop…"/><link as="script" rel="preload" href="/wonny-log/webpack-runtime-33297a26e985c72e4eca.js"/><link as="script" rel="preload" href="/wonny-log/framework-1aed5cbbf8eed94c8a57.js"/><link as="script" rel="preload" href="/wonny-log/app-515aa47635272c0b914c.js"/><link as="script" rel="preload" href="/wonny-log/commons-56b354c6179f0ffb1243.js"/><link as="script" rel="preload" href="/wonny-log/component---src-templates-blog-post-js-6749ab22f48846a7e48c.js"/><link as="fetch" rel="preload" href="/wonny-log/page-data/flutter/flutter-intro/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/wonny-log/page-data/sq/d/2841359383.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/wonny-log/page-data/sq/d/3257411868.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/wonny-log/page-data/app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div class="global-wrapper" data-is-root-path="false"><header class="global-header"><a class="header-link-home" href="/wonny-log/">Wonny Log</a></header><main><article class="blog-post" itemscope="" itemType="http://schema.org/Article"><header><h1 itemProp="headline">flutter intro</h1><p>July 14, 2021</p></header><section itemProp="articleBody"><h1>Flutter 그리고 Web &#x26; Desktop</h1>
+<ol>
+<li>Flutter - Beautiful native apps in record time</li>
+<li>Trend현황</li>
+<li>Flutter2</li>
+<li>Architecture</li>
+<li>Material, Cupertino design</li>
+<li>Flutter Web</li>
+<li>Flutter Desktop</li>
+</ol>
+<h1>Flutter - Beautiful native apps in record time</h1>
+<p><a href="flutter.dev">Flutter 공식 개발자 페이지</a> 의 제목이 Beautiful native apps in record time 입니다.  이 제목과 같이 Flutter는 네이티브로 빠르게 동작하는 아름다운 앱을 개발할 수 있는 UI 툴킷 입니다.
+구글에서 만들었고 지원하고 있으며,  구글의 차세대 OS인 퓨시아용 앱 개발의 주된 방식으로 사용됩니다.</p>
+<blockquote>
+<p>Flutter is Google’s UI toolkit for building beautiful, natively compiled applications for  <a href="https://flutter.dev/docs">mobile</a> ,  <a href="https://flutter.dev/web">web</a> ,  <a href="https://flutter.dev/desktop">desktop</a> , and  <a href="https://flutter.dev/embedded">embedded</a>  devices from a single codebase.  </p>
+</blockquote>
+<ul>
+<li>공식 사이트에서는 Flutter를 toolkit으로 칭하고 있습니다.
+좀 더 크로스 플랫폼의 앱을 개발하는데 초점이 가 있기 때문이 아닌가 싶습니다.</li>
+</ul>
+<h1>Trend 현황</h1>
+<p>Flutter 의 관심도는 나날이 높아지고 있습니다. eos가 많은 google이기 때문에 초반에 많은 걱정이 있었지만, 계속 발전해 나갈것으로 보입니다.</p>
+<p>Stack Overflow Trends를 보면
+<span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/wonny-log/static/41421ac8f6f0e8b7a8ee5db6ec8452f3/35252/trend-1.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 68.35443037974683%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAACXBIWXMAABYlAAAWJQFJUiTwAAABuklEQVQ4y52U/ZLaIBTFff+navsE7f6hVdtRa9wokY8A4YaPeDrgxonVbnfKzBnIBX453Mswu1wuGIYBuf8fjW1kzLquQ1VVCCGUYErpwxqGhLNQ0FrfwDNjDObzOTI4xgjvfYFn5fGzWO5jCHDUY/ljgZeXb6jrusRnSilst1s458pfy+IYi8bxs1iKEarr8XP+FV8+f8L35fLqkDGGxWJxB5xqhEyVUoQlj0YZuLOCbjV8CFfgew6Lk5TuvkegoYCOevTB3/JXitI0DVarVclh3jzN14PDtznyEUK1IMVA5G6w4lAIgd1uVxzmKv/dYUCICSkGWFHDiCN814KI7oGcc6zX6weHMcSiFNPEqUfQDFpxxDTAET0Cc1HykfPENIfkCeTdm6hsDkaisx1sH3EZBvTPgDmH2WF2Nt542xtob2B6C+sJutNo+RGt5miUhbUE53poYx+BUkpsNhs0rIE4Cxz3v8CqCurwCrXfQ1UV2HaLc30COzHUrwc0xwNYXaE+7EHuj6LkQT5qziU/c0ghy72SQkAKDt1KtK1CLp6SCpKL6xwX0Kote++A+EfLKTmdTu+umT4SvwHQ4j+CoX3ENAAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="trend 1"
+        title="trend 1"
+        src="/wonny-log/static/41421ac8f6f0e8b7a8ee5db6ec8452f3/f058b/trend-1.png"
+        srcset="/wonny-log/static/41421ac8f6f0e8b7a8ee5db6ec8452f3/c26ae/trend-1.png 158w,
+/wonny-log/static/41421ac8f6f0e8b7a8ee5db6ec8452f3/6bdcf/trend-1.png 315w,
+/wonny-log/static/41421ac8f6f0e8b7a8ee5db6ec8452f3/f058b/trend-1.png 630w,
+/wonny-log/static/41421ac8f6f0e8b7a8ee5db6ec8452f3/40601/trend-1.png 945w,
+/wonny-log/static/41421ac8f6f0e8b7a8ee5db6ec8452f3/35252/trend-1.png 1204w"
+        sizes="(max-width: 630px) 100vw, 630px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>Cross-Platform중에서는 급속도로 성장하여 react-native를 제친지 오래되었습니다.
+(<a href="https://insights.stackoverflow.com/trends?tags=flutter%2Creact-native%2Ccordova%2Ctitanium%2Cxamarin%2Cionic%2Celectron">Link</a>)</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/wonny-log/static/662bed186c8115e6210e1d2999e775be/9937c/trend-2.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 68.9873417721519%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAACXBIWXMAABYlAAAWJQFJUiTwAAAB4UlEQVQ4y31T25KrIBDM/3/avpyH87APqVw0Zg0YFUFQbvapmcRcts4uVThQDk13z7ABAGMMmqZBjBE5Z6SUOK6T9kteeH7/T+sUI+w4EhQ29GnbFvv9HuM4MmgI4RF5HSImP0EYATMZLGl55oWIr07i4+8fqF5ho5RC13UoigLWWr6RktcYYkCKCa1tUQ0VOtsxKOfEhBAT+qvAfvuJprlis9vtWC4xJOmU6L3n2yny2gf0tuc1gZ3UCZWqoJyCnz3saFjuQpKJGUkuy/LBkMDWSBfMYYaeNDNa2RPjWtcwzvA5BlwWbIjZypB+fPeQop0te/jqa04ZOSY0RqLT7Ttg3/fs4f+KQlEaCefdzbM7IHkbY4IPAVfVvwNSUX6TTNJuAM9LUs4Is0PTSKi+ewe8XC6g4vxUlMEOb3sfIqLTEKKG7lu4tSgEeDgc2MNXhtRbz/YhD8dbA6fMTZzcgLbrYSbPOeNo3wGJ4Xa7vQPeZaUIN3sYN+NqFNw8wzkLqztoPWAKGTklZjzeXwkDDsPAQNQ6x3KPc12iFhWqukRxLnA8Fzidj5B1ha9zBSkFaiHRSAkpJYQQ0Fo/AfEyvA8vFY6Pnpum6dEBN0te/PSe3/QDkD7r/GmQArLlt7Ge/weBkDxwQSvgTwAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="trend 2"
+        title="trend 2"
+        src="/wonny-log/static/662bed186c8115e6210e1d2999e775be/f058b/trend-2.png"
+        srcset="/wonny-log/static/662bed186c8115e6210e1d2999e775be/c26ae/trend-2.png 158w,
+/wonny-log/static/662bed186c8115e6210e1d2999e775be/6bdcf/trend-2.png 315w,
+/wonny-log/static/662bed186c8115e6210e1d2999e775be/f058b/trend-2.png 630w,
+/wonny-log/static/662bed186c8115e6210e1d2999e775be/40601/trend-2.png 945w,
+/wonny-log/static/662bed186c8115e6210e1d2999e775be/9937c/trend-2.png 1156w"
+        sizes="(max-width: 630px) 100vw, 630px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>최악의 언어로 꼽힌 dart도 Flutter 개발에 사용된 이후에 급속도로 성장하게 되었습니다.
+(<a href="https://insights.stackoverflow.com/trends?tags=dart%2Ckotlin%2Cswift">Link</a>)</p>
+<p>Cross-Platform 개발시에는 많은 선택사항들이 있습니다. 그동안 react-native 가 주 옵션이지만 Flutter2 이후부터는 Flutter가 주 선택사항으로 자리매김 하지 않을까 합니다.</p>
+<h1>Flutter2</h1>
+<p>업데이트를 거듭하며 Flutter2를 기점으로 인상적인 변화가 있었습니다.
+이전까지 stable 채널에서는 오직 Android와 iOS만을 지원했었습니다.</p>
+<ul>
+<li>Mobile Framework -> Portable Framework
+최적화가 이루어져서 드디어 Web이 Stable 채널에서 지원하게 되었고, 데스크탑 앱(리눅스, 맥, 윈도우), 임베디드 기기까지 지원하게 되었습니다.
+<span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 59.49367088607595%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYAAABiDJ37AAAACXBIWXMAAAsTAAALEwEAmpwYAAAC+UlEQVQoz1VS+2sTaRSdP8VfFvzNv2R/WBB1B3dBURoUl2WRrhSaPkgqWAUftdatj93qtltcilq0kmrro7WNMa/m2TZpMnnZqp18k5lJOt9M7pH5WlAPHO7lO3znngtXyuVyP9Tr7HRD0zoMnXl2qXkYY55Go+EB8B11XReaS01jHqPBPA2NdTDGzhSLxQNSNps902634cJpE2yHRHXBbRuJVAb/jk9g7N59hCMxWJYltDYRiEhUF25fKBT8UiSa6ADaeBrd2Tk5ovKzY4wfvbrNI0Xw+ucan36+yJ+9CvKZ1yH+6GWQK6Uyd2e5nIm2+JHL2/zBUrPlmqaz691SbCXpcQ1jRe4MPTPo7rxJIwGdagy0WavQ20iGVAtUV5v0dvopKeWqG4kcp03L6xZdmtYpuG45AGF1LeeVovGEMAzEd5zf/2Z09h7DzVldrFFUyliIpLFpA9W8gvkLAyhUqkI7d5/h9G0Vv93ZpgdLhuO+ZVZzXim+l3BF4c7oc4NuzxmYT4oNoJTKiGXzsPd2jGQ3xBAXgXgT0+938CQOWtvENwljXxOeulWnrnENqi4Golqp4L+lDCbyJuY+Av8HV1Eu7Rq6aPEmlkOvKbW+6thtoJD/JmGiZDsjswZNLJjQzD3Dag1TizE8zuQwuaZjcjGJSnnXkLU4jnWcQveJn+n44R+dh4E5qEzzSpG9hDOxlnNiRCXvpEbcvR2AlFKZQvEsMZNIM2x6F03TRlERWjizRocO/kTjVy/SHyeP2oPXhqF80rxSIplyDxYVlZzZBKdgznYvS3za2vpILxbfUyJfpWT+AwXehKha+yA01rSod3CIerx99Gd3v/3oxQJUte6VwuGwp6Hr4FYTcJoguwnTNGEYhqjJVBrLwXdYDoYQX0lANwyhccvCRnULU09mMR+MQTdbyKRTPVJnZ+e+gQH/L339Prm7xyd7e32yz/eV168PyaOjfwneGB6W/X6/YF9/v3zl0qB8558xefTmDfm83/frua6u/V8AcpchO9R7AhQAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="flutter2 intro"
+        title="flutter2 intro"
+        src="/wonny-log/static/1b897bcf4e198527bea07fbc19646440/f058b/flutter2_intro.png"
+        srcset="/wonny-log/static/1b897bcf4e198527bea07fbc19646440/c26ae/flutter2_intro.png 158w,
+/wonny-log/static/1b897bcf4e198527bea07fbc19646440/6bdcf/flutter2_intro.png 315w,
+/wonny-log/static/1b897bcf4e198527bea07fbc19646440/f058b/flutter2_intro.png 630w,
+/wonny-log/static/1b897bcf4e198527bea07fbc19646440/40601/flutter2_intro.png 945w,
+/wonny-log/static/1b897bcf4e198527bea07fbc19646440/78612/flutter2_intro.png 1260w,
+/wonny-log/static/1b897bcf4e198527bea07fbc19646440/2cefc/flutter2_intro.png 1400w"
+        sizes="(max-width: 630px) 100vw, 630px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span>
+다양한 플랫폼에 대하여 <a href="https://flutter.gskinner.com/">gskinner: leaders in Flutter design and development</a>를 통해 좀 더 살펴볼 수 있습니다.</li>
+</ul>
+<h1>Architecture</h1>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/wonny-log/static/82c25693219162957568b36adc96c2a6/191e2/archdiagram.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 82.27848101265823%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAYAAAAWGF8bAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEcElEQVQ4yzWQ/U9TVxzG719Chgtgg5FE0BZXCGA2BKZQkIETwWRq5svmphOYc0KdChoXna9FXSkgM1OCxSFQSiQyptmMvdByaW+rXofal3svvZeuaG/L8Vl6oz98cs55zpPn+5xD3Zm0YmDCCrvDBpZ3w+6zIa9Lj/yePJTf2ohtdxpQfOMT6Cxa1Fm3oLavRt2vv1GM+oGtqOqrRF63PpH0HLMf66T+9j2E85UTroATTwQfbD4b0i+nQ3NFgxVXV2DltZXIvJKJNFMa1vWuQ2FPIdJN6aqWdS1L9WSYMhKrzKtwaOgHCzUTdGI2yKiBXp6F3TeKNebVyO3KRa5FB61FC51Fp1LZZ4Chz4C1Xblqy/d3Wos2UdhbAOPoUQvl9E+BCc6ogT7BixHvMFLOpyD1UipSL36AZZeWqaRdToO2U6sOSTZ8r6deTEXKhZREsnHT3WY1kDDBGeIKOImXZ4ndN0q0Zi0x3DKQ2v5akt+dT/YM7iE6s45U3Kog5TfLVW334G6i69SpnoqbFUrR9UIYbUc7KVdgGrMhBjNBF56KyT8cwbKLHyKjY7lKmikDOebVyOjQYI1Fi9yutdBcyUSOOQdppnQs79Co68prWfh+6FAv9XiO9jjmptlH3GN2as7F2j1jbL21mq231qg0DNSwn/dXsTsGt7AHbHvZg/Z97PY/trCb+6vYBmut6qm7Xc3sGNwaODt+pp3qsU4w1jHH7PTz1wzzIsqMOqLMJmOMaTgVV6lrizONHQnG0PKGqWtfZOpOLjLVP8VUreGkonrq2+POL36Ov2y7Lpyg/nELmH3xGt4QwVyY4N5MHPrGMEpaZZWPj8jYdlbGmv1hlB1dQKlRxtpGCdvOSFh3WML6VhnFLRJKjAto6Q71Up7AEvGFCHH7E+S5uETGpmMke988yW+SSEGzRPKaJLL1tEw0X84TfaNE8holkvVVmNS0SyRrb5jkN0vko4OSoj0go+lqsJOafakQbyBBPO8Cx10xUtAUJqUtMilrlUlJi0x2npPJBqNEKo/LKpvaZLLrgkzKWiRS3SaTTSdkxXB8Aa3dITPl9i/BxwPe0Fv4+LdgXr3F8FQCI1MJDNEJ3HcvwTwWQ+YeGXnNERV9UwSbT0Wg2Z18fgS67yLI/jaCQ2bhN8r5hHe4nvI0w4nvEOhn/nn6mT9MP3kVpl/y8/Q9WqT3dwTp1m6/yo9dQfrk7wL9TYdAH+nmk+dHB38Vn5oG5ozUQ7vp2ejtXzjXgx7uNT/JvXkxwAnD5dz8yEZufngDJ9qquMhfu7j4WBGn3DeoxMdLOWWyllOGsrnYaAEXsxf5EnZ9WPzz69NUNDCBxdADRPwTSCzQAD+MyN0CRO2f4j97GaK2YkQnd0C+W4SIrQQRWxkWhoqw6DiMmOccYp7ziLEXoLDnEHZ33aAUYTKkiA95RXzAK+FHfPR5Px+6refFkUpetH3GC4PFvDi+nReGK3gxyUglLwyW8hH3VV6JePhY+DEfCzv8ijytCP9OnP8f/O535s/O3HEAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="archdiagram"
+        title="archdiagram"
+        src="/wonny-log/static/82c25693219162957568b36adc96c2a6/f058b/archdiagram.png"
+        srcset="/wonny-log/static/82c25693219162957568b36adc96c2a6/c26ae/archdiagram.png 158w,
+/wonny-log/static/82c25693219162957568b36adc96c2a6/6bdcf/archdiagram.png 315w,
+/wonny-log/static/82c25693219162957568b36adc96c2a6/f058b/archdiagram.png 630w,
+/wonny-log/static/82c25693219162957568b36adc96c2a6/40601/archdiagram.png 945w,
+/wonny-log/static/82c25693219162957568b36adc96c2a6/78612/archdiagram.png 1260w,
+/wonny-log/static/82c25693219162957568b36adc96c2a6/191e2/archdiagram.png 1836w"
+        sizes="(max-width: 630px) 100vw, 630px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<ul>
+<li>아래 레이어에 대해서 접근권한이 없으며, Framework 레벨의 모든부분은 선택사항이며, 대체 가능하도록 설계되었습니다.</li>
+</ul>
+<h2>Flutter Engine</h2>
+<p>위 Architecture에서 core 부분인 Engine은 c++로 구현되어 있습니다. dart 언어로 추상화 되어있고, dart:ui로 감싸져 있습니다.
+엔진은 UI의 scene들을 display에 표현(rasterizing)합니다. 기존 크로스 플랫폼 프레임워크와는 다르게 각 시스템이 제공하는 컨트롤(웹뷰등)을 사용하지 않고 직접 그리기 때문에(<a href="https://skia.org/">Skia</a>사용) native app과 같은 경험을 제공합니다.</p>
+<h2>Skia</h2>
+<p>2005년에 구글에 인수되어 2008년에 오픈소스로 출시된 2D 그래픽 라이브러리 입니다. 크롬, 안드로이드, 플러터, 파이어폭스의 그래픽 엔진으로 사용되있습니다.
+Flutter는 각 디바이스의 Native Component를 사용하지 않고 Skia를 통해 widget을 직접 그리기 때문에 플랫폼이 달라지더라도 동일한 모습을 나타낼 수 있습니다.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 524px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/wonny-log/static/738f9d3e4f451b0796ed76b070bc583d/664c8/native.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 58.86075949367089%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAIAAADtbgqsAAAACXBIWXMAAAsTAAALEwEAmpwYAAACjUlEQVQoz42Qy08TURjF79RW4sJECj6IFWPUQDT+F4pYCKAxIQg+9rrCBGgYjCGsWh5iJEQjuKiJ9CUtRZBEtDOxZIbSQksLUqE8LKXMtAh0prWdmXtNixtdeb6zO/lOfjlAhBJCCOYsQBFCJIoiQkiQYEbKZlwyRbtm6GmXe2aGYWMSQhlREiQoQQTEtJD6meB3EulEKtsCoSAI6B9BKZNKchwn/h0B4yr50m3rdw2/mrVPMHNJMQ2lLMvk8o55nrEGWGuAtfjZ7zvZ6mAsafGzY0vx4QC7wPAADF0FFjVmUQPDtQLrbf92KLnPsTG2pJMGLY7DOCnHCdA4iY8HEfqFf1gCzQ6VlpLjRNPYCsDMVXJztcJSA4yVRWMPvvjoUHDZ6/Nd6qaOdUwVdDiLddSR9qnG93NSPNxk8wMNqdJSslay5WMIAGM5ZlJjpkpgKFPa6n4kY9npEHxkC5YP+m7q/bf0/rLXXtM8gxAy+Jiat4GH9uXadwt6TxQU2htOjN5VjtwptDecGr23xm0jEYqSiP5DQDlSf3L0vnKk/njueZ1nEcyefjb6fCo84N4a9ET7qM0+arOfjgy4o4Pu6BtP9Jkz7Fzfy2Eb1Zip4gB7I4cNEbyopUCz44yOVulohYaQtzgUGkKlpU5rqSItBRo/N4+vAGCqlJmrZOZqYKrIt9V5w8HkPhePx6700IdwsrTXdaHHlYeT+e3Oo0+/nu2kL79wl/a6gIZ48mkNAMN1zHgDM6rBUJnSWrvB/xmspIuWtRLnu6fPdU3ntZEKnFDgBKZxFOvovDYSPJ7UTKwC3+7qgb27ocDeekYSRCG71iLDeyPcN4ZfZHjfFuc9cIRbYHjvFufZTET2078Brk38UrOHDFgAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="native"
+        title="native"
+        src="/wonny-log/static/738f9d3e4f451b0796ed76b070bc583d/664c8/native.png"
+        srcset="/wonny-log/static/738f9d3e4f451b0796ed76b070bc583d/c26ae/native.png 158w,
+/wonny-log/static/738f9d3e4f451b0796ed76b070bc583d/6bdcf/native.png 315w,
+/wonny-log/static/738f9d3e4f451b0796ed76b070bc583d/664c8/native.png 524w"
+        sizes="(max-width: 524px) 100vw, 524px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span>
+<OEM SDKs></p>
+<p>전통적인 App들은 위의 모습과 같은 형태를 갖습니다. Platform에서 제공하는 위젯으로 구현하기 때문에 Platform에 종속적이지만 그만큼 최적화가 잘 되어 있어 매끄러운 화면을 제공합니다.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/wonny-log/static/5d9ff44f90953fbe0516d9fb8f8d2aaf/4597d/webview.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 49.36708860759494%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAIAAAA7N+mxAAAACXBIWXMAAAsTAAALEwEAmpwYAAACKklEQVQoz1VQbWhSYRR+27KIIolBxfqACEb/+xUUgUTqVs1RY4ggbNTvQaxoIW5haxV9/epPH7O2NXWKtGGO3NKmXm2uW+n1A2HgNde889quX3DVe++Ju9Wqh8PhHJ7zPPAcxAsCrEMA2Jw3wPO8IAi8IFJstRYhojiOk2RaPBYBCASo5ItMNl9hSr89/hf/4yZwdRGbO9J8enDKdU3munHc2WuImwGAE/h1b5GOUuVWY1iskfC5V5E0w35n2I4xossU01riaL+9E705vdUiR+MnFDN91FJmlc7lcjk6/5NeyRhn8Yar7kbdfMPNj6h31hFKvMeTqM8t0Xt36b3o8LseZFFKbCo0IbsUGAaAKler8fU6zwMIRLZ09kVYMRJWvAwrjUSKYck19vxrQm2Oq01xUSydUh9xXmm0qVTYEADUeG4jEsdxfzKLvV5eK9PZarn4N/MhR/d2+8WmaQ2yKNux2wDgo6Ny38D0jxAAEFSpY5TQWhM99mTrs5D8KdY19vWyPamdTGjNcXTQ0Y3MCon1ApqQKT0DAPA84dzxtvNuZBJ4mIkto+vuvXcCB+4HUf/8Np1PasCOPlzYNxzYc8uHmqc0yHRGYm1D4yfbPDoAGF2a22JrvxezAcCHZHan3tvyaOHYk8Xdg17poPinlsehJoO/eQhDGB2fo755ViMu6kuESQEAxTKO7CJZyQFAga37ycLn5RK+UgqmixhZ8KUKoUzRnyoE08Vftci4P1/t4ncAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="webview"
+        title="webview"
+        src="/wonny-log/static/5d9ff44f90953fbe0516d9fb8f8d2aaf/f058b/webview.png"
+        srcset="/wonny-log/static/5d9ff44f90953fbe0516d9fb8f8d2aaf/c26ae/webview.png 158w,
+/wonny-log/static/5d9ff44f90953fbe0516d9fb8f8d2aaf/6bdcf/webview.png 315w,
+/wonny-log/static/5d9ff44f90953fbe0516d9fb8f8d2aaf/f058b/webview.png 630w,
+/wonny-log/static/5d9ff44f90953fbe0516d9fb8f8d2aaf/4597d/webview.png 631w"
+        sizes="(max-width: 630px) 100vw, 630px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span>
+<WebViews></p>
+<p>OEM SDKs로 App들을 개발하려면 각 Platform별로 개발을 해야 되기 때문에 자원이 많이 필요합니다. 따라서 좀 더 효율적인 개발을 위해 각 Platform에서 제공하는 WebView를 활용하여 html과 javascript로 Cross Platform 개발을 하는 방법이 있습니다.
+단순한 기능을 구현할때에는 Platform에 종속적인 코드가 최소화 되지만 Device의 기능들을 사용하려면 Bridge가 필요합니다. 또한 보안등의 문제로 native 코드가 추가로 필요할 수 있습니다.
+WebView의 렌더링 엔진에 따라 최적화가 달라지게 되며, Platform별로 다른 WebView로 동일한 화면을 제공하지 못할 수 있습니다. 또한 WebView에서 다시 렌더링이 이루어 지고, html렌더링이 native방식보다 빠르지 못해 위의 OEM SDKs 방법보다 속도가 떨어집니다.
+두 방식의 장점을 취하기 위해 속도가 중요하지 않는 부분은 WebView로 개발하여 두 방식을 혼합하여 개발하기도 합니다.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/wonny-log/static/9081ff763ad73254aca18adaf76fd2d2/f058b/reactiveviews.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 47.46835443037975%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAIAAAC9o5sfAAAACXBIWXMAAAsTAAALEwEAmpwYAAACIUlEQVQoz1WRW0hTcRzH/9QGClEPNR8WVGhBLz3WS9CFsLIEjYHNsqSg0dTe0mYlWkniKGg0CkaZjEx3a85pzcK8jNPmfdO5rW3pWdsKj9uZZzvb2eVsv9AHo+/DF76ftw9fBACZeJKOUJlkGv4Py7L5fP7fZOjwGhGLxbYIeuJU1VvkYrPs1vcXX4h5AFhLU40LXdoQBgCJTPbpqL/x00+JafneMB5OZoNU6uFXvHUEl2FBtLu/CqnOcHQXUM9xib0LAJxUAPWeujz6mAqszrq8vHYMSca4LWZ099uIfXlgxoskY+jBeInUivYN3USacq6uEvWVtjk/AIAnHirQC0TTcsgCQcWv9DlL3y6UKxfLlEv+KOMm6Mr3DqHadVvvQfzB2j3GmuLPIm6/oAF7SQcjpiWs2CRqWuwGgGyO3ZDbNCcj4eAvfyxGbRHEH6rlfry0yyBEmjKJ7R2wME94ecZrd2wKAKBS6Rtat1DlqjP6Krpt5xXT1b2OukHfda273uBBRQNXkeosR3MR9Zy471ACwI94CKnPVU90QAZwIsx7ZC5sMfM7rduax7c3T+xoww48nypsNR+STqLDw+KdhqoiYw1HV9HuUgOAj/5ToBeI514BQCTBHJXPHpHNnHxjP/hsskRq3d9pOfZ6bm+H5bTChoLJMJ4g/AlihV5dz9Abt+dYL/2bSFOQBzaXC6yncJLxRzebZHCSwaPMCsmEqNRfqqh/V+229dUAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="reactiveviews"
+        title="reactiveviews"
+        src="/wonny-log/static/9081ff763ad73254aca18adaf76fd2d2/f058b/reactiveviews.png"
+        srcset="/wonny-log/static/9081ff763ad73254aca18adaf76fd2d2/c26ae/reactiveviews.png 158w,
+/wonny-log/static/9081ff763ad73254aca18adaf76fd2d2/6bdcf/reactiveviews.png 315w,
+/wonny-log/static/9081ff763ad73254aca18adaf76fd2d2/f058b/reactiveviews.png 630w"
+        sizes="(max-width: 630px) 100vw, 630px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span>
+<Reactive Views></p>
+<p>React Native는 Platform별로 Bridge를 제공하기 때문에 개발자는 Reactive View를 구현하여 Cross Platform 개발을 좀 더 편하게 만들게 합니다. Bridge를 통해 OEM Widgets을 사용하게 되기 때문에 제공되는 Widget의 자유도가 높지 않으며, Bridge접속이 늘어날 경우 성능상의 문제가 발생하기도 합니다.</p>
+<ul>
+<li>Native 기능을 쓰려면 Framework에서 제공하지 않는 기능을 쓸 때가 많습니다. 그럴땐 결국 Bridge역할을 하는 코드들이 필요합니다. 결국 WebView, Reactive Views, Flutter개발을 할 때 native 개발이 필요할 수 있습니다.</li>
+</ul>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 628px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/wonny-log/static/d4388e172f16374760a15d7a88ad3605/3d84d/flutter_platform_arch.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 48.10126582278481%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAIAAAA7N+mxAAAACXBIWXMAAAsTAAALEwEAmpwYAAACFklEQVQoz2P4jwT+/PsLQX///f3///+/f//g5LNnz86cOXP16tXPnz/DBRm+f/z67vnrj6/e/f+HbA5I+u/fv3Du379/f/z48fPnT2RBBpf9Nc67q5x2VwYdb6++srj1+uqqK4sWP9z//9//P3//oLjrL8j4uWeeBy+/FrvmZsWOewwMKxwZV7kxrHJlWO7CstJDdFsSw1o/+50Fd2/fffPmzTsYePv27eu3794/vR+14AxD8QGGigPavacYGFZ5MK7xZVjtxb0+JPpUX+b56TGn+yfe3vzn95+fv37+/vPn9x8Q+Pv3L8TmmSef+S29GrPmZuHmOwySWxMltyaKbYmX3pr48scH5HBC9t6vHz+eP3n88tnTXz9/IvzMsi6QY30w67pAgY0RU+5sWf7o4Ox7O/e+uggJtYY9DwKXXM3aejdm9XWPWWf8559LXX8zc8udiFXXi7feYWBY5c642pthtRfLGl/21T4S25KY1gW47in7/vX7508fHaefZijaJ959kqPuMEP5QZbqw4Ltx8W6TzLXHNSfcBrs59U+DKu92NYGGO0t9D7abHuwquDCnP9///3789tj/iXWukOaU86Kdx5nrzvEVX+Yt+mIXO9JhqoDljPOMxx5c+3om+tH3lw7+fbWr7+//4ISyR+In//9+3vj9bcTTz6de/b5zLPPp558OvXk08knn848+3T88ccrr74CAJtevC+ssEyUAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="flutter platform arch"
+        title="flutter platform arch"
+        src="/wonny-log/static/d4388e172f16374760a15d7a88ad3605/3d84d/flutter_platform_arch.png"
+        srcset="/wonny-log/static/d4388e172f16374760a15d7a88ad3605/c26ae/flutter_platform_arch.png 158w,
+/wonny-log/static/d4388e172f16374760a15d7a88ad3605/6bdcf/flutter_platform_arch.png 315w,
+/wonny-log/static/d4388e172f16374760a15d7a88ad3605/3d84d/flutter_platform_arch.png 628w"
+        sizes="(max-width: 628px) 100vw, 628px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span>
+<Flutter></p>
+<p>Flutter 또한 Reactive View를 제공하고 있지만 위에서 다룬 Flutter engine을 통해 각 Platform의 Widget을 거치지 않고 직접 Widget을 만들어 Platform별로 native로 컴파일됩니다. 따라서 Platform별로 좀 더 동일한 화면과 좀 더 최적화된 UI를 제공합니다.</p>
+<h1>Material, Cupertino design</h1>
+<p>Flutter는 Android 방식의 Material design과 iOS방식의 Cupertino design을 모두 지원하며 각각의 widget으로 제공합니다.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/wonny-log/static/87ee2af9d65c5167793953d1e5554624/ca3c3/cupertino.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 82.27848101265823%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAYAAAAWGF8bAAAACXBIWXMAABYlAAAWJQFJUiTwAAADC0lEQVQ4y12US2/bRhDH+aV66KGfoeipXyRFe3SDwhcj7aU1XBToAwF8aC+1Ab8iOU3tKFaRtn5UCiLJsWO9RVIkJYqvJbm/YkdwnGSAP3Yxw/nvzsx/aQG0Wy/5bbvGL7+fs713jD0ZGzd5npNlGUopQZIk4q/VamxtbdFqtbi4uKDZbAo2NjawzAedTgfHcVEF9Ho9hsPhO4RpmgpuCff394XQcRzOzs6E2OStrq4uCVvtNrYhLKHb7TEYDO4IlSKOY0GSpOKvVCrs7u6xWERcXV0xGAyFfG1tbUl42W6xu7NDtXLI3s6uBI2VRU6uMop8iSyN39xwc3OTvu3z+vUNvcGIl+1LvlxZwVKFZpZobkYuV32b7iSQJK1LYqWZp3cIEi1VeJ5Hs3PDq77NZW9Cpzuh1x/Kba0ky5kECd5CMV3kuKEiSTMhDBYZIy9iEkSMpgv5Ls21HBjEJdNQCbyo5NasaLHAHo/wpi5T1xb4vk+pNeF8hu+5hPNQ9rclF0UhLShNK1SKLvJli8oSyzQ+zRSFhqKEvDTlLoPGzJTt8TXd7jWBP0NrLbEojpmbg8KFrLPZXKRlqbww8wTUHUol0zX2onXNr9t7fLP+PQ8f/ii+MJxzcFDl5OQ5T5/Wqdf/plr9g0ajiUWZ8bit+KpasF4rWD0saAwVulhK5PDPY+59/gWffvIRP/3wQHyOY9NoNOS2WZbKapRhfBZkfFfL+eDbko9/LvlwveRRS4FeEv7z73MefH2f+yuf8fhgR3zTqcvp6ano1BDFccJwOOL8/BxLKfVuue+V7EzGuJMJR0+OqDyqvhnKi8Z//FV/xvHRE+rPatTrJ7iuu9RhkIKXIGteaEoNuixJCrCDhP7Ep3U94mbsL6epNXEB8xRCBfOMO9mIDv2IsRfhhXcRo8N5lOHMjEYz/LgQrZoJG5gcyTNrELOIImmBVRpNqYw8S+WpLcm0wGhz0Osy7PcEZm9+EoYw8D1UlpKrVJ6nGY5phWUS37ZbMoPZbIbtOPLUplODqWjt/Zy3c/8HXHSqS9P8+GcAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="cupertino"
+        title="cupertino"
+        src="/wonny-log/static/87ee2af9d65c5167793953d1e5554624/f058b/cupertino.png"
+        srcset="/wonny-log/static/87ee2af9d65c5167793953d1e5554624/c26ae/cupertino.png 158w,
+/wonny-log/static/87ee2af9d65c5167793953d1e5554624/6bdcf/cupertino.png 315w,
+/wonny-log/static/87ee2af9d65c5167793953d1e5554624/f058b/cupertino.png 630w,
+/wonny-log/static/87ee2af9d65c5167793953d1e5554624/40601/cupertino.png 945w,
+/wonny-log/static/87ee2af9d65c5167793953d1e5554624/78612/cupertino.png 1260w,
+/wonny-log/static/87ee2af9d65c5167793953d1e5554624/ca3c3/cupertino.png 1850w"
+        sizes="(max-width: 630px) 100vw, 630px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span>
+&#x3C;Cupertino Widget 예></p>
+<p>같은 Device에서 Material과 Cupertino 를 섞어서 사용하는것도 가능합니다.
+(개발하다보면 결국 Material로 개발하게 됩니다.)</p>
+<ul>
+<li><a href="https://codelabs.developers.google.com/codelabs/flutter-cupertino?hl=ko#0">Flutter로 Cupertino 앱 빌드  |  Google Codelabs</a></li>
+</ul>
+<h1>Flutter Web</h1>
+<p>다른 플랫폼과는 다르게 Web을 지원하기 위해서는 몇가지 특징들이 필요했습니다.
+다트는 예전부터 javascript로 컴파일 되어왔고, 구글 Ads ads 에도 실제로 사용되었습니다. 따라서 다트로 이루어진 Flutter가 자바스크립트로 컴파일되는 것은  간단했습니다.
+하지만 C++로 구현되어있는 engine은 웹 브라우져 보다는 기본 운영체제에 맞춰 고안되었습니다. 따라서 다른 접근방식이 필요했으며, Flutter는 브라우저의 standard api에 맞는 새로운 engine을 구현하였습니다.
+HTML 또는 WebGL 두 방식으로 렌더링이 이루어집니다. HTML 모드에서는 HTML, CSS, Canvas, SVG를 사용하며, WebGL에서는 CanvasKit이라고 WebAssembly로 컴파일 된 Skia 를 사용합니다. HTML mode에서는 최적화된 코드 사이즈를 제공하며 WebGL 모드에서는 최적화된 그래픽 성능을 제공합니다.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/wonny-log/static/e2f8b5d258336295361c9050e7b7aee9/191e2/web-arch.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 46.202531645569614%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAYAAAAywQxIAAAACXBIWXMAAAsTAAALEwEAmpwYAAACnElEQVQozz2R+0uTYRTH96dIy8uGuNS52bCRhkiRLjXalNLZ1FlKEQXaDdL/QMrbdL5LtMskt6Wm23RPXktTfNlUdLOLWjqft5B+iWw+fuN9g344HPh8D4fP4cgGp93wTLoxtuTHOl2DLzwKLadBpkOLcy/OotRdgpy+bKTaT8D46hKKnIVIs6fiTF8OSlwm5DvPQ+vQxLL7TqPR18jJ5jbeI7QTxHI0hIgQhi/ihaJdgeTOZKR0pSDNnib1pI4k5D3PQ25fLpQ2hcTSu9Oh6lJBaVPG1Jwa90ceOmTL0SBWossI7QYRpuvwR3xIt6dD69BCw2mQwWVIpXFoYOg3oKC/QLLP4NT/OKeBulsd0/fq8cjb6JAFd/j/C0XD0fAI4p7EQd4mh7xVjuOtcsS3xSOxPRG6pzpk9WRJtiITM3EmriUuJl5UP9wgLWQr0WUW2g2yMF1n/oiPZXZrWVF/ITMNGJm+R8/qhmuZtlvLDE4DK3iZz/Q9p1jt0HV2kstkxgEju+A0HOT0ZqPR28TJRLPVvVWEoiFsfN+AN+KFvPUYkmxJUNgUSOxIkB6itCmh69FBPE20EVlCezyUnUokdCRAZVfh7pt7z2SLn98t8Zvz/NKXOT60tciPr/n4MtdV3uy28OVuC2/2VPKXXWa+8rWVv+Nr4Ov9D3iLp1piZk8VX+4y81dc5oXqwZpPzYHmJtnSlIN+eOug+5t+Gtufp7FtNz30F1MWMFEWKKVs+ho9GrtID8eK6QEpo7/HTfRQzPyFlE1Z6dF0DWWBkt2jyYo/+4vNj2Vbq0PkY3Dw7bf1UfJzZ5b82h4ie4EKIkxUETphJcLMLUJJBRGIhQhTdUSYqCHChJXQQDkRpm8SYfa2ODf+Y+bGwteFloa/SNDNsexwOH4AAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="web arch"
+        title="web arch"
+        src="/wonny-log/static/e2f8b5d258336295361c9050e7b7aee9/f058b/web-arch.png"
+        srcset="/wonny-log/static/e2f8b5d258336295361c9050e7b7aee9/c26ae/web-arch.png 158w,
+/wonny-log/static/e2f8b5d258336295361c9050e7b7aee9/6bdcf/web-arch.png 315w,
+/wonny-log/static/e2f8b5d258336295361c9050e7b7aee9/f058b/web-arch.png 630w,
+/wonny-log/static/e2f8b5d258336295361c9050e7b7aee9/40601/web-arch.png 945w,
+/wonny-log/static/e2f8b5d258336295361c9050e7b7aee9/78612/web-arch.png 1260w,
+/wonny-log/static/e2f8b5d258336295361c9050e7b7aee9/191e2/web-arch.png 1836w"
+        sizes="(max-width: 630px) 100vw, 630px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>다른 플랫폼과 다르게 Flutter는 Dart runtime이 필요하지 않으며, javascript로 컴파일됩니다. </p>
+<h2>Web Demo</h2>
+<ul>
+<li><a href="https://flutterplasma.dev/">Flutter Plasma</a></li>
+<li><a href="http://minikin.me/flutter-web-demo/#/">Flutter Web App Demo</a></li>
+<li><a href="https://flutter.github.io/samples/web_dashboard.html">Flutter samples</a></li>
+</ul>
+<h2>지원 시나리오</h2>
+<ul>
+<li>A Progressive Web Application built with Flutter</li>
+<li>Single Page Application</li>
+<li>Existing mobile application
+<a href="https://www.youtube.com/watch?v=HAstl_NkXl0&#x26;t=566s">YouTube</a></li>
+</ul>
+<h2>Web페이지 안에서 사용하기</h2>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">&lt;iframe src=&quot;URL&quot;&gt;&lt;/iframe&gt;</code></pre></div>
+<h1>Flutter Desktop</h1>
+<ul>
+<li>Ubuntu에서 차세대 데스크톱 설치 프로그램으로 Flutter 활용중</li>
+<li>Ubuntu의 경우 조만간 Flutter 설치프로그램을 사용하게 될 것이며, 표준환경 또한 Flutter로 지원 될 예정</li>
+</ul>
+<p>현재 Stable branch에 Linux, Mac, Window 로 빌드할 수 있게 들어와 있습니다.  Web과는 다르게 매우 안정적인 모습을 보여주고 있어 조만간 많은 플랫폼에서 활용되지 않을까 합니다.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/wonny-log/static/07276ed9a2a66897b9ed8a5cba32e777/3a1b1/test_vaccine_app.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 43.0379746835443%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAYAAAAywQxIAAAACXBIWXMAABYlAAAWJQFJUiTwAAABbUlEQVQoz63M/0sTcRzH8c9/HElEiD8I0W6bxEww/KGfoh/C4fpFhX4sjTIMTF1Fm1Nva/O82213n7t9vpz5jJ1jBbIg6AMPPq/3F96ivFrGeVTGcUo4hSJOoTRVKBSpVJ7wdHWN5eWVvP49L+bGvWJpicUH8yzcmUNkJgOu+R8vrNcRLbdD+0eXSCbEsyTp7NlEKNN8T3QufJodj16kuJTmn3nSECSGRBmikUWUPqZ0BympMkhlkdP/T4ZE2xvKTvN4NtKWMLWsHFj2uxpR2Rty4sX4icWTGZ60t1wmGb1I0xsqLmJzkye8WOOGisefNK9PDaK27/Jir81m64qts2u2Tn/esn0Gr76lbHyR1L4mrB8O2KjHeV09jqgdD3j4QXF/1yKevTvn+Xv37wfPJwfHR+oxLw98qkfDPK8fhlQ/B9x7M+LujkU0+oZm33AyyGjNdEWzr2kEimag+e6rPDcCTcMf9xS7bc1bV/MLtfSIPDNO91MAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="test vaccine app"
+        title="test vaccine app"
+        src="/wonny-log/static/07276ed9a2a66897b9ed8a5cba32e777/f058b/test_vaccine_app.png"
+        srcset="/wonny-log/static/07276ed9a2a66897b9ed8a5cba32e777/c26ae/test_vaccine_app.png 158w,
+/wonny-log/static/07276ed9a2a66897b9ed8a5cba32e777/6bdcf/test_vaccine_app.png 315w,
+/wonny-log/static/07276ed9a2a66897b9ed8a5cba32e777/f058b/test_vaccine_app.png 630w,
+/wonny-log/static/07276ed9a2a66897b9ed8a5cba32e777/40601/test_vaccine_app.png 945w,
+/wonny-log/static/07276ed9a2a66897b9ed8a5cba32e777/78612/test_vaccine_app.png 1260w,
+/wonny-log/static/07276ed9a2a66897b9ed8a5cba32e777/3a1b1/test_vaccine_app.png 1686w"
+        sizes="(max-width: 630px) 100vw, 630px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>Mac OS 로 간단하게 잔여백신을 찾는 앱을 만들어봤습니다.(만들고 나서야 무의미한 일인것을 깨달았습니다ㅠㅠ) Android, iOS에서 동작하는 코드와 동일한 코드를 사용했지만, notification 같은 경우는 별도로 plugin으로 구현하였습니다. 현재 지원되고 있는 플랫폼은 개별 플러그인마다 한정적이라 디바이스 특화 기능을 사용하는데에는 추가 개발이 필요할것 같습니다.</p>
+<h1>Flutter</h1></section><hr/><footer><div class="bio"><div data-gatsby-image-wrapper="" style="width:50px;height:50px" class="gatsby-image-wrapper bio-avatar"><div aria-hidden="true" data-placeholder-image="" style="opacity:1;transition:opacity 500ms linear;background-color:#080808;width:50px;height:50px;position:relative"></div><picture><source type="image/avif" data-srcset="/wonny-log/static/d526eb73ee58dab6245f5dffd3cb1ecd/d4bf4/profile-pic.avif 50w,/wonny-log/static/d526eb73ee58dab6245f5dffd3cb1ecd/ee81f/profile-pic.avif 100w" sizes="50px"/><source type="image/webp" data-srcset="/wonny-log/static/d526eb73ee58dab6245f5dffd3cb1ecd/3faea/profile-pic.webp 50w,/wonny-log/static/d526eb73ee58dab6245f5dffd3cb1ecd/6a679/profile-pic.webp 100w" sizes="50px"/><img data-gatsby-image-ssr="" layout="fixed" data-main-image="" style="opacity:0" sizes="50px" decoding="async" loading="lazy" data-src="/wonny-log/static/d526eb73ee58dab6245f5dffd3cb1ecd/e5610/profile-pic.png" data-srcset="/wonny-log/static/d526eb73ee58dab6245f5dffd3cb1ecd/e5610/profile-pic.png 50w,/wonny-log/static/d526eb73ee58dab6245f5dffd3cb1ecd/e9b55/profile-pic.png 100w" alt="Profile picture"/></picture><noscript><picture><source type="image/avif" srcSet="/wonny-log/static/d526eb73ee58dab6245f5dffd3cb1ecd/d4bf4/profile-pic.avif 50w,/wonny-log/static/d526eb73ee58dab6245f5dffd3cb1ecd/ee81f/profile-pic.avif 100w" sizes="50px"/><source type="image/webp" srcSet="/wonny-log/static/d526eb73ee58dab6245f5dffd3cb1ecd/3faea/profile-pic.webp 50w,/wonny-log/static/d526eb73ee58dab6245f5dffd3cb1ecd/6a679/profile-pic.webp 100w" sizes="50px"/><img data-gatsby-image-ssr="" layout="fixed" data-main-image="" style="opacity:0" sizes="50px" decoding="async" loading="lazy" src="/wonny-log/static/d526eb73ee58dab6245f5dffd3cb1ecd/e5610/profile-pic.png" srcSet="/wonny-log/static/d526eb73ee58dab6245f5dffd3cb1ecd/e5610/profile-pic.png 50w,/wonny-log/static/d526eb73ee58dab6245f5dffd3cb1ecd/e9b55/profile-pic.png 100w" alt="Profile picture"/></picture></noscript><script type="module">const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1)}}</script></div><p>Written by <strong>Wonny</strong> <!-- -->하고싶은 것이 많은 개발자<!-- --> </p></div></footer></article><nav class="blog-post-nav"><ul style="display:flex;flex-wrap:wrap;justify-content:space-between;list-style:none;padding:0"><li><a rel="prev" href="/wonny-log/postmoterm/postmoterm-sam-2021/">← <!-- -->퇴사부검</a></li><li></li></ul></nav></main><footer>© <!-- -->2021<!-- -->, Built with<!-- --> <a href="https://github.com/Wonny-L">Wonny</a></footer></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/flutter/flutter-intro/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-f83c4b2e2e1cf1b5d515.js"],"app":["/app-515aa47635272c0b914c.js"],"component---src-pages-404-js":["/component---src-pages-404-js-1f32db45655307a9c513.js"],"component---src-pages-index-js":["/component---src-pages-index-js-389076842056999b1ad2.js"],"component---src-pages-using-typescript-tsx":["/component---src-pages-using-typescript-tsx-93f3a31a77af40ee9800.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js-6749ab22f48846a7e48c.js"]};/*]]>*/</script><script src="/wonny-log/polyfill-f83c4b2e2e1cf1b5d515.js" nomodule=""></script><script src="/wonny-log/component---src-templates-blog-post-js-6749ab22f48846a7e48c.js" async=""></script><script src="/wonny-log/commons-56b354c6179f0ffb1243.js" async=""></script><script src="/wonny-log/app-515aa47635272c0b914c.js" async=""></script><script src="/wonny-log/framework-1aed5cbbf8eed94c8a57.js" async=""></script><script src="/wonny-log/webpack-runtime-33297a26e985c72e4eca.js" async=""></script></body></html>
