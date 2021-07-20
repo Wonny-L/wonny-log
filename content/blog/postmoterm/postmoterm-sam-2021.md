@@ -1,6 +1,7 @@
 ---
 title: 퇴사부검
 date: "2021-06-30T16:12:03.284Z"
+category: postmoterm
 description: "2013년에 입사한 회사를 퇴직하면서..."
 ---
 
